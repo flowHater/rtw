@@ -168,7 +168,7 @@ func readManyReadClosers(loggers []Logger) (chan []byte, chan []byte) {
 }
 
 var bytesToRemove = [][]byte{
-	[]byte("\x1b"),
+	[]byte("\033c"),
 	[]byte("\b"),
 	[]byte("\r"),
 }
